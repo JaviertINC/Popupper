@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>Popupper | @JaviertINC</title>
     <style>
         body{
           	background-color: #222;
@@ -41,10 +41,16 @@
 
 <body>
     <div>
-        <input type="text" id="url" placeholder="Enlace (se recomienda la versión Embed)"><a onclick="popitup()">Abrir</a>
+        <input type="text" id="url" onkeypress="enter(event)" placeholder="Enlace (se recomienda la versión Embed)">
+        <a onclick="popupper()">Abrir</a>
     </div>
     <script>
-        function popitup() {
+        function enter(e) {
+            if (e.keyCode == 13) {
+                popupper();
+            }
+        }
+        function popupper(){
         	var url = document.getElementById("url").value;
         	pop=window.open(url,'@JaviertINC','height=200,width=300');
         	if (window.focus) {
@@ -55,5 +61,4 @@
     </script>
 
 </body>
-
 </html>
