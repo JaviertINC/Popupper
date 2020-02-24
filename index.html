@@ -36,6 +36,12 @@
           a:active{
             background-color: #888;
           }
+          p{
+            color: #fff;
+          }
+          p span{
+            color: #4caf50;
+          }
     </style>
 </head>
 
@@ -43,6 +49,9 @@
     <div>
         <input type="text" id="url" onkeypress="enter(event)" placeholder="Enlace (se recomienda la versión Embed)">
         <a onclick="popupper()">Abrir</a>
+    </div>
+    <div>
+        <p>Desarrollado por <span>@JaviertINC</span>.</p>
     </div>
     <script>
         function enter(e) {
