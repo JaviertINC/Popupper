@@ -36,13 +36,10 @@
           a:active{
             background-color: #888;
           }
-          p{
-            color: #fff;
-            text-align: center;
-            width: 100%;
-          }
-          p span{
-            color: #4caf50;
+          iframe{
+          	border: none;
+            margin: 0;
+            padding: 0;
           }
     </style>
 </head>
@@ -52,9 +49,7 @@
         <input type="text" id="url" onkeypress="enter(event)" placeholder="Enlace (se recomienda la versión Embed)">
         <a onclick="popupper()">Abrir</a>
     </div>
-    <div>
-        <p>Desarrollado por <span>@JaviertINC</span>.</p>
-    </div>
+    <iframe src="https://javiertinc.github.io/footer.html"></iframe>
     <script>
         function enter(e) {
             if (e.keyCode == 13) {
